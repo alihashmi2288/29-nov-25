@@ -6,25 +6,55 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #303846; /* Dark Blue/Gray */
+  --ifm-color-primary-dark: #2a313b;
+  --ifm-color-primary-darker: #282e37;
+  --ifm-color-primary-darkest: #22272e;
+  --ifm-color-primary-light: #363f4e;
+  --ifm-color-primary-lighter: #394354;
+  --ifm-color-primary-lightest: #414d60;
+
+  --ifm-color-secondary: #0060e0; /* Vibrant Blue */
+  --ifm-color-secondary-dark: #0054c8;
+  --ifm-color-secondary-darker: #004fb9;
+  --ifm-color-secondary-darkest: #00439c;
+  --ifm-color-secondary-light: #006ceb;
+  --ifm-color-secondary-lighter: #0d75f2;
+  --ifm-color-secondary-lightest: #2e8afe;
+
+  --ifm-color-accent: #ff6f61; /* Coral */
+
+  --ifm-text-color: #333333; /* Dark Gray */
+  --ifm-light-gray: #f4f4f4; /* Light Gray */
+  --ifm-background-color: #ffffff; /* White */
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #a0a6ad; /* Lighter primary for dark mode */
+  --ifm-color-primary-dark: #91989e;
+  --ifm-color-primary-darker: #8a9096;
+  --ifm-color-primary-darkest: #767d84;
+  --ifm-color-primary-light: #afb5bd;
+  --ifm-color-primary-lighter: #b3bdc4;
+  --ifm-color-primary-lightest: #c0c8cf;
+
+  --ifm-color-secondary: #4a90e2; /* Lighter vibrant blue for dark mode */
+  --ifm-color-secondary-dark: #3f82d1;
+  --ifm-color-secondary-darker: #3b7cc5;
+  --ifm-color-secondary-darkest: #326aab;
+  --ifm-color-secondary-light: #5ba1eb;
+  --ifm-color-secondary-lighter: #69aef2;
+  --ifm-color-secondary-lightest: #85c2ff;
+
+  --ifm-color-accent: #ff9e96; /* Lighter coral for dark mode */
+
+  --ifm-text-color: #e0e0e0; /* Light text for dark mode */
+  --ifm-light-gray: #333333; /* Darker gray for dark mode subtle backgrounds */
+  --ifm-background-color: #20232a; /* Dark background */
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
