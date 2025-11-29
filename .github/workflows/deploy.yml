@@ -44,4 +44,5 @@ jobs:
           # The following lines are needed if you are deploying to a repository that is not the same as the one where your source code is.
           # external_repository: your-username/your-repo-name
           publish_branch: gh-pages
+          force_orphan: true
           # cname: your-custom-domain.com
