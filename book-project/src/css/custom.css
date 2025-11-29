@@ -6,25 +6,257 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #303846; /* Dark Blue/Gray */
+  --ifm-color-primary-dark: #2a313b;
+  --ifm-color-primary-darker: #282e37;
+  --ifm-color-primary-darkest: #22272e;
+  --ifm-color-primary-light: #363f4e;
+  --ifm-color-primary-lighter: #394354;
+  --ifm-color-primary-lightest: #414d60;
+
+  --ifm-color-secondary: #0060e0; /* Vibrant Blue */
+  --ifm-color-secondary-dark: #0054c8;
+  --ifm-color-secondary-darker: #004fb9;
+  --ifm-color-secondary-darkest: #00439c;
+  --ifm-color-secondary-light: #006ceb;
+  --ifm-color-secondary-lighter: #0d75f2;
+  --ifm-color-secondary-lightest: #2e8afe;
+
+  --ifm-color-accent: #ff6f61; /* Coral */
+
+  --ifm-text-color: #333333; /* Dark Gray */
+  --ifm-light-gray: #f4f4f4; /* Light Gray */
+  --ifm-background-color: #ffffff; /* White */
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #a0a6ad; /* Lighter primary for dark mode */
+  --ifm-color-primary-dark: #91989e;
+  --ifm-color-primary-darker: #8a9096;
+  --ifm-color-primary-darkest: #767d84;
+  --ifm-color-primary-light: #afb5bd;
+  --ifm-color-primary-lighter: #b3bdc4;
+  --ifm-color-primary-lightest: #c0c8cf;
+
+  --ifm-color-secondary: #4a90e2; /* Lighter vibrant blue for dark mode */
+  --ifm-color-secondary-dark: #3f82d1;
+  --ifm-color-secondary-darker: #3b7cc5;
+  --ifm-color-secondary-darkest: #326aab;
+  --ifm-color-secondary-light: #5ba1eb;
+  --ifm-color-secondary-lighter: #69aef2;
+  --ifm-color-secondary-lightest: #85c2ff;
+
+  --ifm-color-accent: #ff9e96; /* Lighter coral for dark mode */
+
+  --ifm-text-color: #e0e0e0; /* Light text for dark mode */
+  --ifm-light-gray: #333333; /* Darker gray for dark mode subtle backgrounds */
+  --ifm-background-color: #20232a; /* Dark background */
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.6;
+  color: var(--ifm-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: var(--ifm-color-primary); /* Use primary color for headings */
+}
+
+/* General Layout Adjustments */
+.main-wrapper {
+  padding-top: var(--ifm-navbar-height); /* Ensure content starts below navbar */
+}
+
+.main-wrapper > .container {
+  max-width: 1200px; /* Limit content width for better readability */
+  padding: 2rem 1rem; /* Add consistent padding */
+}
+
+/* Adjustments for content areas */
+.markdown {
+  line-height: 1.7; /* Slightly increase line height for body text */
+}
+
+.docusaurus-highlighted-code-line {
+  margin: 0 -1rem; /* Extend highlighted code lines to edges of padding */
+  padding: 0 1rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--ifm-background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--ifm-light-gray);
+}
+
+.navbar__brand {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+.navbar__title {
+  color: var(--ifm-color-primary);
+}
+
+.navbar__item:hover {
+  color: var(--ifm-color-secondary);
+}
+
+/* Dark mode adjustments for navbar */
+[data-theme='dark'] .navbar {
+  background-color: var(--ifm-background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--ifm-light-gray);
+}
+
+/* Sidebar Styling */
+.theme-doc-sidebar-container {
+  background-color: var(--ifm-background-color);
+  border-right: 1px solid var(--ifm-light-gray);
+}
+
+.theme-doc-sidebar-item-link {
+  color: var(--ifm-text-color);
+  font-weight: normal;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-light-gray);
+}
+
+.theme-doc-sidebar-item-link--active {
+  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-light-gray);
+  font-weight: bold;
+}
+
+/* Dark mode adjustments for sidebar */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: var(--ifm-background-color);
+  border-right: 1px solid var(--ifm-light-gray);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-link {
+  color: var(--ifm-text-color);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-link:hover,
+[data-theme='dark'] .theme-doc-sidebar-item-link--active {
+  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-light-gray);
+}
+
+/* Content Area Enhancements */
+.theme-doc-markdown {
+  max-width: 800px; /* Optimal reading width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0; /* Add some vertical padding */
+}
+
+.theme-doc-markdown h1 {
+  border-bottom: 1px solid var(--ifm-light-gray);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 2rem;
+  border-bottom: 1px dashed var(--ifm-light-gray);
+  padding-bottom: 0.3rem;
+}
+
+.theme-doc-markdown p {
+  margin-bottom: 1rem;
+}
+
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.theme-doc-markdown code {
+  background-color: var(--ifm-light-gray);
+  padding: 0.2em 0.4em;
+  border-radius: var(--ifm-global-border-radius);
+  color: var(--ifm-text-color);
+}
+
+/* Dark mode adjustments for content area */
+[data-theme='dark'] .theme-doc-markdown h1,
+[data-theme='dark'] .theme-doc-markdown h2 {
+  border-color: var(--ifm-light-gray);
+}
+
+[data-theme='dark'] .theme-doc-markdown code {
+  background-color: #3f444c;
+  color: #e0e0e0;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff; /* White text for dark primary background */
+  padding: 2rem 0;
+  border-top: 1px solid var(--ifm-light-gray);
+}
+
+.footer__title {
+  color: #ffffff;
+}
+
+.footer__link-item {
+  color: #ffffff;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-secondary);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dark mode adjustments for footer */
+[data-theme='dark'] .footer {
+  background-color: var(--ifm-color-primary); /* Dark primary background */
+  border-top: 1px solid var(--ifm-light-gray);
+}
+
+[data-theme='dark'] .footer__bottom {
+  border-top-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 996px) {
+  .main-wrapper > .container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .theme-doc-markdown {
+    max-width: 100%; /* Allow full width on small screens */
+    padding: 0 1rem;
+  }
+}
+
+
+
+
+
+
+
