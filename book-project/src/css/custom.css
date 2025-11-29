@@ -118,5 +118,44 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--ifm-light-gray);
 }
 
+/* Sidebar Styling */
+.theme-doc-sidebar-container {
+  background-color: var(--ifm-background-color);
+  border-right: 1px solid var(--ifm-light-gray);
+}
+
+.theme-doc-sidebar-item-link {
+  color: var(--ifm-text-color);
+  font-weight: normal;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-light-gray);
+}
+
+.theme-doc-sidebar-item-link--active {
+  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-light-gray);
+  font-weight: bold;
+}
+
+/* Dark mode adjustments for sidebar */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: var(--ifm-background-color);
+  border-right: 1px solid var(--ifm-light-gray);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-link {
+  color: var(--ifm-text-color);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-link:hover,
+[data-theme='dark'] .theme-doc-sidebar-item-link--active {
+  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-light-gray);
+}
+
+
 
 
