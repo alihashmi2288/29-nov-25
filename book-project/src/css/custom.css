@@ -242,6 +242,19 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Responsive Adjustments */
+@media screen and (max-width: 996px) {
+  .main-wrapper > .container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .theme-doc-markdown {
+    max-width: 100%; /* Allow full width on small screens */
+    padding: 0 1rem;
+  }
+}
+
+
 
 
 
