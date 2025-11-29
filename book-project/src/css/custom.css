@@ -71,3 +71,24 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ifm-color-primary); /* Use primary color for headings */
 }
 
+/* General Layout Adjustments */
+.main-wrapper {
+  padding-top: var(--ifm-navbar-height); /* Ensure content starts below navbar */
+}
+
+.main-wrapper > .container {
+  max-width: 1200px; /* Limit content width for better readability */
+  padding: 2rem 1rem; /* Add consistent padding */
+}
+
+/* Adjustments for content areas */
+.markdown {
+  line-height: 1.7; /* Slightly increase line height for body text */
+}
+
+.docusaurus-highlighted-code-line {
+  margin: 0 -1rem; /* Extend highlighted code lines to edges of padding */
+  padding: 0 1rem;
+}
+
+
