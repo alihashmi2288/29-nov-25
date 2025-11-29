@@ -156,6 +156,55 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--ifm-light-gray);
 }
 
+/* Content Area Enhancements */
+.theme-doc-markdown {
+  max-width: 800px; /* Optimal reading width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0; /* Add some vertical padding */
+}
+
+.theme-doc-markdown h1 {
+  border-bottom: 1px solid var(--ifm-light-gray);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 2rem;
+  border-bottom: 1px dashed var(--ifm-light-gray);
+  padding-bottom: 0.3rem;
+}
+
+.theme-doc-markdown p {
+  margin-bottom: 1rem;
+}
+
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.theme-doc-markdown code {
+  background-color: var(--ifm-light-gray);
+  padding: 0.2em 0.4em;
+  border-radius: var(--ifm-global-border-radius);
+  color: var(--ifm-text-color);
+}
+
+/* Dark mode adjustments for content area */
+[data-theme='dark'] .theme-doc-markdown h1,
+[data-theme='dark'] .theme-doc-markdown h2 {
+  border-color: var(--ifm-light-gray);
+}
+
+[data-theme='dark'] .theme-doc-markdown code {
+  background-color: #3f444c;
+  color: #e0e0e0;
+}
+
+
 
 
 
