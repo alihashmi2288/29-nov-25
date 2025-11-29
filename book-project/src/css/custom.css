@@ -91,4 +91,32 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 1rem;
 }
 
+/* Navbar Styling */
+.navbar {
+  background-color: var(--ifm-background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--ifm-light-gray);
+}
+
+.navbar__brand {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+.navbar__title {
+  color: var(--ifm-color-primary);
+}
+
+.navbar__item:hover {
+  color: var(--ifm-color-secondary);
+}
+
+/* Dark mode adjustments for navbar */
+[data-theme='dark'] .navbar {
+  background-color: var(--ifm-background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--ifm-light-gray);
+}
+
+
 
