@@ -16,17 +16,17 @@
 
 ### Implementation for User Story 1
 
-- [ ] T001 [US1] Create the chapter file at `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
-- [ ] T002 [US1] Add the content for "ROS 2 Nodes" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
-- [ ] T003 [US1] Add the content for "ROS 2 Topics, Publishers, and Subscribers" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
-- [ ] T004 [US1] Add the content for "ROS 2 Services and Clients" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
-- [ ] T005 [US1] Add the content for "ROS 2 Actions and Action Clients" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
-- [ ] T006 [US1] Add the content for "The Role of DDS in ROS 2" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
-- [ ] T007 [US1] Update the Docusaurus sidebar in `book-project/sidebars.ts` to include the new chapter.
+- [X] T001 [US1] Create the chapter file at `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
+- [X] T002 [US1] Add the content for "ROS 2 Nodes" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
+- [X] T003 [US1] Add the content for "ROS 2 Topics, Publishers, and Subscribers" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
+- [X] T004 [US1] Add the content for "ROS 2 Services and Clients" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
+- [X] T005 [US1] Add the content for "ROS 2 Actions and Action Clients" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
+- [X] T006 [US1] Add the content for "The Role of DDS in ROS 2" from `research.md` to `book-project/docs/physical-ai-course/introduction-to-ros-2.md`
+- [X] T007 [US1] Update the Docusaurus sidebar in `book-project/sidebars.ts` to include the new chapter.
 
 ## Phase 2: Polish & Cross-Cutting Concerns
 
-- [ ] T008 Run quickstart.md validation to ensure the chapter is correctly integrated.
+- [X] T008 Run quickstart.md validation to ensure the chapter is correctly integrated.
 
 ## Dependencies & Execution Order
 

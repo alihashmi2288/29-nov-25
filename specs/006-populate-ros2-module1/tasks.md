@@ -16,14 +16,14 @@
 
 ### Implementation for User Story 1
 
-- [ ] T001 [US1] Create the `_category_.json` file at `book-project/docs/physical-ai-course/module-1-the-robotic-nervous-system-ros-2/_category_.json`
-- [ ] T002 [US1] Add the content for `_category_.json` as defined in the quickstart guide.
-- [ ] T003 [US1] Create the `index.md` file at `book-project/docs/physical-ai-course/module-1-the-robotic-nervous-system-ros-2/index.md`
-- [ ] T004 [US1] Add the content for `index.md` as defined in the quickstart guide.
+- [X] T001 [US1] Create the `_category_.json` file at `book-project/docs/physical-ai-course/module-1-the-robotic-nervous-system-ros-2/_category_.json`
+- [X] T002 [US1] Add the content for `_category_.json` as defined in the quickstart guide.
+- [X] T003 [US1] Create the `index.md` file at `book-project/docs/physical-ai-course/module-1-the-robotic-nervous-system-ros-2/index.md`
+- [X] T004 [US1] Add the content for `index.md` as defined in the quickstart guide.
 
 ## Phase 2: Polish & Cross-Cutting Concerns
 
-- [ ] T005 Run quickstart.md validation to ensure the module is correctly integrated.
+- [X] T005 Run quickstart.md validation to ensure the module is correctly integrated.
 
 ## Dependencies & Execution Order
 
