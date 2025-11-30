@@ -16,13 +16,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T001 [US1] Create the preface file at `book-project/docs/preface.md`
-- [ ] T002 [US1] Add the preface content to `book-project/docs/preface.md`
-- [ ] T003 [US1] Update the Docusaurus sidebar in `book-project/sidebars.ts` to include the preface.
+- [X] T001 [US1] Create the preface file at `book-project/docs/preface.md`
+- [X] T002 [US1] Add the preface content to `book-project/docs/preface.md`
+- [X] T003 [US1] Update the Docusaurus sidebar in `book-project/sidebars.ts` to include the preface.
 
 ## Phase 2: Polish & Cross-Cutting Concerns
 
-- [ ] T004 Run quickstart.md validation to ensure the preface is correctly integrated.
+- [X] T004 Run quickstart.md validation to ensure the preface is correctly integrated.
 
 ## Dependencies & Execution Order
 
