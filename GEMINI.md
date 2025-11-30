@@ -211,6 +211,7 @@ See `.specify/memory/constitution.md` for code quality, testing, performance, se
 
 ## Active Technologies
 - Markdown + Docusaurus (004-create-preface)
+- Markdown, JSON + Docusaurus (006-populate-ros2-module1)
 
 ## Recent Changes
 - 004-create-preface: Added Markdown + Docusaurus
