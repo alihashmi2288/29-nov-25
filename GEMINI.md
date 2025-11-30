@@ -208,3 +208,9 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Markdown + Docusaurus (004-create-preface)
+
+## Recent Changes
+- 004-create-preface: Added Markdown + Docusaurus

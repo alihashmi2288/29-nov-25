@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
     'intro', // Keep existing intro
+    'preface',
     {
       type: 'category',
       label: 'Tutorial Basics',
